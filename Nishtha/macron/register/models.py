@@ -15,7 +15,7 @@ LANGUAGES = (
 
 
 class Customer(models.Model):
-    phone = models.IntegerField(primary_key=True)
+    phone = models.CharField(primary_key=True, max_length=100)
     aadhar = models.CharField(max_length=200)
     name = models.CharField(max_length=100)
     account_number = models.CharField(max_length=100)
